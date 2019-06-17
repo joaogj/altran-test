@@ -8,7 +8,7 @@ import Button from './components/atoms/Button';
 function App() {
   return (
     <div className="App">
-      <Button />
+      <Side />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
