@@ -1,22 +1,31 @@
 import React, {Component} from 'react';
-// import { FiEdit2 } from 'react-icons/fi'
-import Sidebar from "react-sidebar";
+import ReactSVG from 'react-svg';
 
 import {
-  MainSideBar,
-  ItemButtons,
+  MainContainer,
+  ListContainer,
+  Item,
+  Text
 } from './styled'
 
 export class Side extends Component {
-      render() {
-        return (
-          <MainSideBar>
-            <ItemButtons>
-              {/* <FiEdit2 /> */}
-            </ItemButtons>
-          </MainSideBar>
-        );
-      }
+  render() {
+    return (
+      <MainContainer>
+        <ListContainer>
+          {this.props.renderItems.map((item, key) => {
+            return (
+              <Item key={key} >
+                <ReactSVG src={item.icon}/>
+                <Text>{item.text}</Text>
+              </Item>
+            )
+          })
+          }
+        </ListContainer>  
+      </MainContainer>
+    );
+  }
 }
 
 export default Side

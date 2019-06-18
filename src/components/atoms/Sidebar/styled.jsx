@@ -1,44 +1,78 @@
 import styled from 'styled-components'
-import Sidebar from "react-sidebar";
 
-
-export const MainSideBar = styled.aside`
-  max-width: 200px;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center;
-  transition-duration: .5s;
-  transition-property: width;
-  position: fixed;
-  left: 0;
-  z-index: 1;
-`
-export const ItemButtons = styled.button`
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.25rem;
-  padding: 1.5rem 1rem;
-  padding-left: 2rem;
-  outline: none;
-  width: 100%;
-  text-align: left;
-  display: flex;
-  align-items: center;
-
-  &:focus {
-    background-color: white;
-    color: black;
+export const MainContainer = styled.div`
+	background-color: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 69px;
+	overflow: hidden;
+	display: flex;
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	-webkit-transition-property: width;
+	transition-property: width;
+	z-index:9;
+	span {
+		opacity: 0;
+		transition-duration: .5s;
+		transition-property: opacity;
   }
-
   span {
-    opacity: 0;
-    white-space: nowrap;
-    position: absolute;
-    left: 5rem;
+    opacity: 1;
     transition-duration: .5s;
+    transition-property: opacity;
   }
+		
+	&:focus-within {
+		width: 197px;
+		transition-duration: .5s;
+		z-index:9;
+      span {
+        opacity: 1;
+        transition-duration: .5s;
+        transition-property: opacity;
+      }
+  }
+`
+export const ListContainer = styled.div`
+	text-decoration: none;
+	list-style: none;
+	margin: auto 0;
+`
+export const Item = styled.button`
+	display: flex;
+	padding: 30px 24px;
+	background: transparent;
+	border: none;
+	min-width: 197px;
+	outline: none;
+	svg{
+		fill: #fff;
+		width: 20px;
+		height: 20px;
+	}
+	&.item-menu-2 {
+		svg {
+			fill: #fff;
+			width: 23px;
+			height: 20px;
+		}
+	}
+	
+	&:focus {
+		background: #fff;
+		color: #000000;
+		span {
+			color: #000000;
+		}
+		svg {
+			fill: #000;
+		}
+	}
+`
+export const Text = styled.span`
+	color: #fff;
+	margin-left: 30px;
 `
