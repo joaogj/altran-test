@@ -29,7 +29,7 @@ export const Title = styled.span`
 `
 
 export const ButtonContainer = styled.div`
-  width: 30%;
+  width: 355px;
   display: flex;
   justify-content: space-between;
 `

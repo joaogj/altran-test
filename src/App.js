@@ -5,6 +5,7 @@ import Menu from './components/atoms/Menu/index';
 import Side from './components/atoms/Sidebar';
 import Spotlight from './components/molecules/Spotlight';
 import Button from './components/atoms/Button';
+import Rail from './components/organisms/Rail';
 
 const Itemns = [
   {
@@ -34,20 +35,6 @@ function App() {
     <div className="App">
       <Side renderItems={Itemns} />
       <Spotlight />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }

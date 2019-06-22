@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../../atoms/Button'
+import Rail from '../../organisms/Rail'
 
 import {
   MainContainer,
@@ -17,6 +18,7 @@ const Spotlight = () => {
           <Button />
           <Button />
         </ButtonContainer>
+        <Rail />
       </SecondContainer>
     </MainContainer>
   )
