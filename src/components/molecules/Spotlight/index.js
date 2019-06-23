@@ -9,7 +9,7 @@ import {
   Title,
 } from './styled'
 
-const Spotlight = () => {
+const Spotlight = (props) => {
   return (
     <MainContainer>
       <SecondContainer>
@@ -18,7 +18,7 @@ const Spotlight = () => {
           <Button />
           <Button />
         </ButtonContainer>
-        <Rail />
+        <Rail img={props.img}/>
       </SecondContainer>
     </MainContainer>
   )

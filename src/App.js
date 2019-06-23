@@ -4,6 +4,7 @@ import './App.css';
 import Menu from './components/atoms/Menu/index';
 import Side from './components/atoms/Sidebar';
 import Spotlight from './components/molecules/Spotlight';
+import Page from './components/templates/page'
 import Button from './components/atoms/Button';
 import Rail from './components/organisms/Rail';
 
@@ -32,10 +33,7 @@ const Itemns = [
 
 function App() {
   return (
-    <div className="App">
-      <Side renderItems={Itemns} />
-      <Spotlight />
-    </div>
+    <Page renderItems={Itemns} />
   );
 }
 

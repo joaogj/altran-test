@@ -22,33 +22,33 @@ class Rail extends Component {
       <Container>
         <Slider {...settings }>
           <div>
-            <Slide img={"bbb-19-logo.jpg"}>
+            <Slide img={this.props.img}>
+              <ButtonDetails>Realities</ButtonDetails>
+              <ButtonDetails>Sala de Estar</ButtonDetails>
+            </Slide>
+          </div>
+          <div>
+            <Slide img={this.props.img}>
               <ButtonDetails>Realities</ButtonDetails>
               <ButtonDetails>Varanda</ButtonDetails>
             </Slide>
           </div>
           <div>
-            <Slide img={"bbb-19-logo.jpg"}>
+            <Slide img={this.props.img}>
               <ButtonDetails>Realities</ButtonDetails>
-              <ButtonDetails>Varanda</ButtonDetails>
+              <ButtonDetails>Piscina</ButtonDetails>
             </Slide>
           </div>
           <div>
-            <Slide img={"bbb-19-logo.jpg"}>
+            <Slide img={this.props.img}>
               <ButtonDetails>Realities</ButtonDetails>
-              <ButtonDetails>Varanda</ButtonDetails>
+              <ButtonDetails>Academia</ButtonDetails>
             </Slide>
           </div>
           <div>
-            <Slide img={"bbb-19-logo.jpg"}>
+            <Slide img={this.props.img}>
               <ButtonDetails>Realities</ButtonDetails>
-              <ButtonDetails>Varanda</ButtonDetails>
-            </Slide>
-          </div>
-          <div>
-            <Slide img={"bbb-19-logo.jpg"}>
-              <ButtonDetails>Realities</ButtonDetails>
-              <ButtonDetails>Varanda</ButtonDetails>
+              <ButtonDetails>Chuveiro</ButtonDetails>
             </Slide>
           </div>
         </Slider>
