@@ -1,5 +1,4 @@
 import React from 'react'
-import Rail from '../organisms/Rail'
 import Spotlight from '../molecules/Spotlight'
 import Side from '../atoms/Sidebar'
 

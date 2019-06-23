@@ -1,12 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Menu from './components/atoms/Menu/index';
-import Side from './components/atoms/Sidebar';
-import Spotlight from './components/molecules/Spotlight';
+import React from 'react'
+import './App.css'
 import Page from './components/templates/page'
-import Button from './components/atoms/Button';
-import Rail from './components/organisms/Rail';
 
 const Itemns = [
   {
